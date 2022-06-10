@@ -1,0 +1,38 @@
+1. 打开终端，下载插件：
+sudo apt update			
+sudo apt install libusb-dev
+
+2. 切换到马傻狗目录：
+cd MJY2022birthday
+
+3. 切换到第一个马傻狗工作目录：
+cd autonomous_exploration_development_environment
+
+4. 编译马傻狗工作空间：
+catkin_make
+
+5. 给马傻狗添加环境变量：
+source devel/setup.bash
+
+6. 可以启动马傻狗一号了！
+roslaunch vehicle_simulator system_mjy.launch
+
+7. 接下来先不用关刚刚打开的界面，
+切换到另一个终端：在刚刚那个终端下 右键-->新建标签页，输入：
+cd ..
+
+8. 切换到第二个马傻狗工作目录：
+cd tare_planner
+
+9. 再次编译马傻狗工作空间:
+catkin_make
+
+10. 再次给马傻狗添加环境变量：
+source devel/setup.bash
+
+11. 可以启动马傻狗二号了！
+roslaunch tare_planner explore_mjy.launch
+
+--------------------------------------------------------
+
+使用你的鼠标左中右键，自己玩去吧！
